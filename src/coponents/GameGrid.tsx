@@ -22,10 +22,10 @@ export const GameGrid = () => {
               <GameCardSkeleton key={skeleton} />
             </GameCardContainer>
           ))}
-        {games.map((game) => (
+        {data.map((data) => (
           <GameCardContainer>
             {" "}
-            <GameCard key={game.id} game={game} />
+            <GameCard key={data.id} game={data} />
           </GameCardContainer>
         ))}
       </SimpleGrid>
